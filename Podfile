@@ -6,6 +6,10 @@ target 'SwipeAdventure' do
   use_frameworks!
 
   pod 'Kingfisher' , '5.15.8'
+  pod 'SnapKit', '~> 5.0.0'
+  pod 'RxSwift', '6.2.0'
+  pod 'RxCocoa', '6.2.0'
+  pod 'RxWebKit'
 
   target 'SwipeAdventureTests' do
     inherit! :search_paths

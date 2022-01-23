@@ -11,13 +11,8 @@ import UIKit
 final class Application {
     static let current: Application = .init()
 
-    func start(_ window: UIWindow, options: UIScene.ConnectionOptions) {
-        let coordinator = MainCoordinator()
-        let useCase = DefaultMainUseCase()
-        let vm = MainViewModel(coordinator: coordinator, useCase: useCase)
-        let vc = MainViewController(vm)
-
-        window.rootViewController = vc
-        window.makeKeyAndVisible()
+    func configure(_ window: UIWindow, options: UIScene.ConnectionOptions) {
+        let applicationCoordinator = AppCoordinator(window: window)
+        applicationCoordinator.start()
     }
 }

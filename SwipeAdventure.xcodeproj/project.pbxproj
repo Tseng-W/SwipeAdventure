@@ -15,12 +15,23 @@
 		7101F492275D044000F86362 /* SwipeAdventureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7101F491275D044000F86362 /* SwipeAdventureTests.swift */; };
 		7101F49C275D044000F86362 /* SwipeAdventureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7101F49B275D044000F86362 /* SwipeAdventureUITests.swift */; };
 		7101F49E275D044000F86362 /* SwipeAdventureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7101F49D275D044000F86362 /* SwipeAdventureUITestsLaunchTests.swift */; };
-		715A3158276A175100D1A58F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715A3157276A175100D1A58F /* MainViewController.swift */; };
-		715A315A276A175700D1A58F /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715A3159276A175700D1A58F /* MainViewModel.swift */; };
-		715A315C276A175D00D1A58F /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715A315B276A175D00D1A58F /* MainCoordinator.swift */; };
-		715A315F276A17BF00D1A58F /* MainUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715A315E276A17BF00D1A58F /* MainUseCase.swift */; };
 		715A3162276A17E700D1A58F /* BaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715A3161276A17E700D1A58F /* BaseType.swift */; };
+		717C6329279C5D4500E9C222 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717C6328279C5D4500E9C222 /* TabBarViewController.swift */; };
+		717C632B279C5D6800E9C222 /* DefaultTabBarUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717C632A279C5D6800E9C222 /* DefaultTabBarUseCase.swift */; };
+		717C632E279C5DA500E9C222 /* TabBarUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717C632D279C5DA500E9C222 /* TabBarUseCase.swift */; };
+		717C6330279C5DCD00E9C222 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717C632F279C5DCD00E9C222 /* TabBarViewModel.swift */; };
+		717C6332279C609D00E9C222 /* TabBarItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717C6331279C609D00E9C222 /* TabBarItemProvider.swift */; };
+		717C6337279D85B800E9C222 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717C6336279D85B800E9C222 /* Colors.swift */; };
+		717C6339279D88AC00E9C222 /* ParameterHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 717C6338279D88AC00E9C222 /* ParameterHelper */; };
+		717C633B279D94B000E9C222 /* LobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717C633A279D94B000E9C222 /* LobbyViewController.swift */; };
+		717C633D279D94C700E9C222 /* DefaultLobbyUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717C633C279D94C700E9C222 /* DefaultLobbyUseCase.swift */; };
+		717C633F279D94CD00E9C222 /* LobbyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717C633E279D94CD00E9C222 /* LobbyViewModel.swift */; };
+		717C6341279D94DC00E9C222 /* LobbyUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717C6340279D94DC00E9C222 /* LobbyUseCase.swift */; };
+		717C6343279D956D00E9C222 /* LobbyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717C6342279D956D00E9C222 /* LobbyCoordinator.swift */; };
+		717C6345279D9BB400E9C222 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717C6344279D9BB400E9C222 /* TabBarCoordinator.swift */; };
+		717C6347279D9C8700E9C222 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717C6346279D9C8700E9C222 /* AppCoordinator.swift */; };
 		71B64F28275D9E3100CB581B /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B64F27275D9E3100CB581B /* Application.swift */; };
+		71FEDB5E279424A600B2F8C7 /* DebugHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 71FEDB5D279424A600B2F8C7 /* DebugHelper */; };
 		9E2AB95C987B0A955815B638 /* Pods_SwipeAdventure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A3C8B6C9C24C0860B9E211C /* Pods_SwipeAdventure.framework */; };
 		EEEBFAFB57A3967FE964875F /* Pods_SwipeAdventureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA044F1755A96FBAB940EBB /* Pods_SwipeAdventureTests.framework */; };
 		F12749046CD73D48649CA3B5 /* Pods_SwipeAdventure_SwipeAdventureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0B69C303BC05B4838F0794 /* Pods_SwipeAdventure_SwipeAdventureUITests.framework */; };
@@ -59,12 +70,22 @@
 		7101F497275D044000F86362 /* SwipeAdventureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeAdventureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7101F49B275D044000F86362 /* SwipeAdventureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeAdventureUITests.swift; sourceTree = "<group>"; };
 		7101F49D275D044000F86362 /* SwipeAdventureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeAdventureUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		715A3157276A175100D1A58F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		715A3159276A175700D1A58F /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		715A315B276A175D00D1A58F /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
-		715A315E276A17BF00D1A58F /* MainUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUseCase.swift; sourceTree = "<group>"; };
 		715A3161276A17E700D1A58F /* BaseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseType.swift; sourceTree = "<group>"; };
+		717C6328279C5D4500E9C222 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		717C632A279C5D6800E9C222 /* DefaultTabBarUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTabBarUseCase.swift; sourceTree = "<group>"; };
+		717C632D279C5DA500E9C222 /* TabBarUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarUseCase.swift; sourceTree = "<group>"; };
+		717C632F279C5DCD00E9C222 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
+		717C6331279C609D00E9C222 /* TabBarItemProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemProvider.swift; sourceTree = "<group>"; };
+		717C6336279D85B800E9C222 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		717C633A279D94B000E9C222 /* LobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyViewController.swift; sourceTree = "<group>"; };
+		717C633C279D94C700E9C222 /* DefaultLobbyUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLobbyUseCase.swift; sourceTree = "<group>"; };
+		717C633E279D94CD00E9C222 /* LobbyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyViewModel.swift; sourceTree = "<group>"; };
+		717C6340279D94DC00E9C222 /* LobbyUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyUseCase.swift; sourceTree = "<group>"; };
+		717C6342279D956D00E9C222 /* LobbyCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyCoordinator.swift; sourceTree = "<group>"; };
+		717C6344279D9BB400E9C222 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		717C6346279D9C8700E9C222 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		71B64F27275D9E3100CB581B /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		71FEDB5C2794233C00B2F8C7 /* Packages */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Packages; path = ../Packages; sourceTree = "<group>"; };
 		7436E1AF7F9B0EF09BB29EA1 /* Pods-SwipeAdventure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeAdventure.debug.xcconfig"; path = "Target Support Files/Pods-SwipeAdventure/Pods-SwipeAdventure.debug.xcconfig"; sourceTree = "<group>"; };
 		8531CDD3416CCE4EBC98703E /* Pods-SwipeAdventure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeAdventure.release.xcconfig"; path = "Target Support Files/Pods-SwipeAdventure/Pods-SwipeAdventure.release.xcconfig"; sourceTree = "<group>"; };
 		E2562F888EBA968461567F7E /* Pods-SwipeAdventure-SwipeAdventureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeAdventure-SwipeAdventureUITests.debug.xcconfig"; path = "Target Support Files/Pods-SwipeAdventure-SwipeAdventureUITests/Pods-SwipeAdventure-SwipeAdventureUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +99,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				717C6339279D88AC00E9C222 /* ParameterHelper in Frameworks */,
+				71FEDB5E279424A600B2F8C7 /* DebugHelper in Frameworks */,
 				9E2AB95C987B0A955815B638 /* Pods_SwipeAdventure.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +127,7 @@
 		7101F46B275D043E00F86362 = {
 			isa = PBXGroup;
 			children = (
+				71FEDB5C2794233C00B2F8C7 /* Packages */,
 				7101F476275D043E00F86362 /* SwipeAdventure */,
 				7101F490275D044000F86362 /* SwipeAdventureTests */,
 				7101F49A275D044000F86362 /* SwipeAdventureUITests */,
@@ -129,6 +153,7 @@
 				7101F477275D043E00F86362 /* AppDelegate.swift */,
 				7101F479275D043E00F86362 /* SceneDelegate.swift */,
 				71B64F27275D9E3100CB581B /* Application.swift */,
+				717C6346279D9C8700E9C222 /* AppCoordinator.swift */,
 				715A315D276A179D00D1A58F /* Model */,
 				715A3160276A17D200D1A58F /* Base */,
 				7101F4AC275D04B400F86362 /* Resource */,
@@ -167,7 +192,8 @@
 		7101F4AB275D04A600F86362 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				715A3156276A174200D1A58F /* Main */,
+				717C6334279D832200E9C222 /* Lobby */,
+				717C6327279C5D3800E9C222 /* TabBar */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,20 +207,11 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		715A3156276A174200D1A58F /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				715A3157276A175100D1A58F /* MainViewController.swift */,
-				715A3159276A175700D1A58F /* MainViewModel.swift */,
-				715A315B276A175D00D1A58F /* MainCoordinator.swift */,
-				715A315E276A17BF00D1A58F /* MainUseCase.swift */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
 		715A315D276A179D00D1A58F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				717C6335279D85AD00E9C222 /* Parameters */,
+				717C632C279C5D7C00E9C222 /* UseCases */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,6 +222,46 @@
 				715A3161276A17E700D1A58F /* BaseType.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		717C6327279C5D3800E9C222 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				717C6331279C609D00E9C222 /* TabBarItemProvider.swift */,
+				717C6328279C5D4500E9C222 /* TabBarViewController.swift */,
+				717C632A279C5D6800E9C222 /* DefaultTabBarUseCase.swift */,
+				717C632F279C5DCD00E9C222 /* TabBarViewModel.swift */,
+				717C6344279D9BB400E9C222 /* TabBarCoordinator.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		717C632C279C5D7C00E9C222 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				717C632D279C5DA500E9C222 /* TabBarUseCase.swift */,
+				717C6340279D94DC00E9C222 /* LobbyUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		717C6334279D832200E9C222 /* Lobby */ = {
+			isa = PBXGroup;
+			children = (
+				717C633A279D94B000E9C222 /* LobbyViewController.swift */,
+				717C633C279D94C700E9C222 /* DefaultLobbyUseCase.swift */,
+				717C633E279D94CD00E9C222 /* LobbyViewModel.swift */,
+				717C6342279D956D00E9C222 /* LobbyCoordinator.swift */,
+			);
+			path = Lobby;
+			sourceTree = "<group>";
+		};
+		717C6335279D85AD00E9C222 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				717C6336279D85B800E9C222 /* Colors.swift */,
+			);
+			path = Parameters;
 			sourceTree = "<group>";
 		};
 		74EA7B40EBE4B68E0A703047 /* Pods */ = {
@@ -248,6 +305,10 @@
 			dependencies = (
 			);
 			name = SwipeAdventure;
+			packageProductDependencies = (
+				71FEDB5D279424A600B2F8C7 /* DebugHelper */,
+				717C6338279D88AC00E9C222 /* ParameterHelper */,
+			);
 			productName = SwipeAdventure;
 			productReference = 7101F474275D043E00F86362 /* SwipeAdventure.app */;
 			productType = "com.apple.product-type.application";
@@ -468,15 +529,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				717C6332279C609D00E9C222 /* TabBarItemProvider.swift in Sources */,
+				717C633F279D94CD00E9C222 /* LobbyViewModel.swift in Sources */,
+				717C6337279D85B800E9C222 /* Colors.swift in Sources */,
+				717C6330279C5DCD00E9C222 /* TabBarViewModel.swift in Sources */,
+				717C633D279D94C700E9C222 /* DefaultLobbyUseCase.swift in Sources */,
+				717C6345279D9BB400E9C222 /* TabBarCoordinator.swift in Sources */,
+				717C6347279D9C8700E9C222 /* AppCoordinator.swift in Sources */,
+				717C6341279D94DC00E9C222 /* LobbyUseCase.swift in Sources */,
+				717C633B279D94B000E9C222 /* LobbyViewController.swift in Sources */,
 				71B64F28275D9E3100CB581B /* Application.swift in Sources */,
-				715A315C276A175D00D1A58F /* MainCoordinator.swift in Sources */,
-				715A315F276A17BF00D1A58F /* MainUseCase.swift in Sources */,
 				7101F482275D043E00F86362 /* SwipeAdventure.xcdatamodeld in Sources */,
 				715A3162276A17E700D1A58F /* BaseType.swift in Sources */,
+				717C6329279C5D4500E9C222 /* TabBarViewController.swift in Sources */,
 				7101F478275D043E00F86362 /* AppDelegate.swift in Sources */,
 				7101F47A275D043E00F86362 /* SceneDelegate.swift in Sources */,
-				715A3158276A175100D1A58F /* MainViewController.swift in Sources */,
-				715A315A276A175700D1A58F /* MainViewModel.swift in Sources */,
+				717C6343279D956D00E9C222 /* LobbyCoordinator.swift in Sources */,
+				717C632B279C5D6800E9C222 /* DefaultTabBarUseCase.swift in Sources */,
+				717C632E279C5DA500E9C222 /* TabBarUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,7 +725,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -684,7 +754,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -818,6 +888,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		717C6338279D88AC00E9C222 /* ParameterHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ParameterHelper;
+		};
+		71FEDB5D279424A600B2F8C7 /* DebugHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DebugHelper;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		7101F480275D043E00F86362 /* SwipeAdventure.xcdatamodeld */ = {
