@@ -21,17 +21,19 @@ class LobbyViewController: UIViewController {
         super.init(coder: coder)
     }
 
+    // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.tw.modifyBackgroundColor(.systemGray)
+        setupUI()
     }
-
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        navigationController?.setBarColor(TWColor.white10)
     }
+}
 
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
+private extension LobbyViewController {
+    func setupUI() {
+        view.backgroundColor = TWColor.white20
     }
 }

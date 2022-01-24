@@ -31,6 +31,6 @@ class TabBarViewController: UITabBarController {
 
 private extension TabBarViewController {
     func setupView() {
-        tabBar.tw.modifyBackgroundColor(TWColor.white)
+        tabBar.tw.modifyBackgroundColor(TWColor.white10)
     }
 }

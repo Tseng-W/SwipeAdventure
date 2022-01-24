@@ -14,7 +14,7 @@ protocol TabBarItem {
 }
 
 enum MainTab: Int, CaseIterable, TabBarItem {
-    case lobby = 0
+    case lobby = 0, lobby2, lobby3
     var index: Int {
         return self.rawValue
     }
