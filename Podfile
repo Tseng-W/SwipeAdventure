@@ -10,6 +10,7 @@ target 'SwipeAdventure' do
   pod 'RxSwift', '6.2.0'
   pod 'RxCocoa', '6.2.0'
   pod 'RxWebKit'
+  pod 'FSCalendar'
 
   target 'SwipeAdventureTests' do
     inherit! :search_paths

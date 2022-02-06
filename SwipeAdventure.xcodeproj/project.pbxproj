@@ -15,6 +15,7 @@
 		7101F492275D044000F86362 /* SwipeAdventureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7101F491275D044000F86362 /* SwipeAdventureTests.swift */; };
 		7101F49C275D044000F86362 /* SwipeAdventureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7101F49B275D044000F86362 /* SwipeAdventureUITests.swift */; };
 		7101F49E275D044000F86362 /* SwipeAdventureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7101F49D275D044000F86362 /* SwipeAdventureUITestsLaunchTests.swift */; };
+		7141A35927A37B3900F908E7 /* LobbyHabitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7141A35827A37B3900F908E7 /* LobbyHabitCell.swift */; };
 		715A3162276A17E700D1A58F /* BaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715A3161276A17E700D1A58F /* BaseType.swift */; };
 		717C6329279C5D4500E9C222 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717C6328279C5D4500E9C222 /* TabBarViewController.swift */; };
 		717C632B279C5D6800E9C222 /* DefaultTabBarUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717C632A279C5D6800E9C222 /* DefaultTabBarUseCase.swift */; };
@@ -31,6 +32,7 @@
 		717C6345279D9BB400E9C222 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717C6344279D9BB400E9C222 /* TabBarCoordinator.swift */; };
 		717C6347279D9C8700E9C222 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717C6346279D9C8700E9C222 /* AppCoordinator.swift */; };
 		71B64F28275D9E3100CB581B /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B64F27275D9E3100CB581B /* Application.swift */; };
+		71DD9B4527A04BA500DF1A8D /* RxExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 71DD9B4427A04BA500DF1A8D /* RxExtension */; };
 		71FEDB5E279424A600B2F8C7 /* DebugHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 71FEDB5D279424A600B2F8C7 /* DebugHelper */; };
 		9E2AB95C987B0A955815B638 /* Pods_SwipeAdventure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A3C8B6C9C24C0860B9E211C /* Pods_SwipeAdventure.framework */; };
 		EEEBFAFB57A3967FE964875F /* Pods_SwipeAdventureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA044F1755A96FBAB940EBB /* Pods_SwipeAdventureTests.framework */; };
@@ -70,6 +72,7 @@
 		7101F497275D044000F86362 /* SwipeAdventureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeAdventureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7101F49B275D044000F86362 /* SwipeAdventureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeAdventureUITests.swift; sourceTree = "<group>"; };
 		7101F49D275D044000F86362 /* SwipeAdventureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeAdventureUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7141A35827A37B3900F908E7 /* LobbyHabitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyHabitCell.swift; sourceTree = "<group>"; };
 		715A3161276A17E700D1A58F /* BaseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseType.swift; sourceTree = "<group>"; };
 		717C6328279C5D4500E9C222 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		717C632A279C5D6800E9C222 /* DefaultTabBarUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTabBarUseCase.swift; sourceTree = "<group>"; };
@@ -101,6 +104,7 @@
 			files = (
 				717C6339279D88AC00E9C222 /* ParameterHelper in Frameworks */,
 				71FEDB5E279424A600B2F8C7 /* DebugHelper in Frameworks */,
+				71DD9B4527A04BA500DF1A8D /* RxExtension in Frameworks */,
 				9E2AB95C987B0A955815B638 /* Pods_SwipeAdventure.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,6 +211,14 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		7141A35727A35AAB00F908E7 /* HabbitCell */ = {
+			isa = PBXGroup;
+			children = (
+				7141A35827A37B3900F908E7 /* LobbyHabitCell.swift */,
+			);
+			path = HabbitCell;
+			sourceTree = "<group>";
+		};
 		715A315D276A179D00D1A58F /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +260,7 @@
 		717C6334279D832200E9C222 /* Lobby */ = {
 			isa = PBXGroup;
 			children = (
+				7141A35727A35AAB00F908E7 /* HabbitCell */,
 				717C633A279D94B000E9C222 /* LobbyViewController.swift */,
 				717C633C279D94C700E9C222 /* DefaultLobbyUseCase.swift */,
 				717C633E279D94CD00E9C222 /* LobbyViewModel.swift */,
@@ -308,6 +321,7 @@
 			packageProductDependencies = (
 				71FEDB5D279424A600B2F8C7 /* DebugHelper */,
 				717C6338279D88AC00E9C222 /* ParameterHelper */,
+				71DD9B4427A04BA500DF1A8D /* RxExtension */,
 			);
 			productName = SwipeAdventure;
 			productReference = 7101F474275D043E00F86362 /* SwipeAdventure.app */;
@@ -534,6 +548,7 @@
 				717C6337279D85B800E9C222 /* Colors.swift in Sources */,
 				717C6330279C5DCD00E9C222 /* TabBarViewModel.swift in Sources */,
 				717C633D279D94C700E9C222 /* DefaultLobbyUseCase.swift in Sources */,
+				7141A35927A37B3900F908E7 /* LobbyHabitCell.swift in Sources */,
 				717C6345279D9BB400E9C222 /* TabBarCoordinator.swift in Sources */,
 				717C6347279D9C8700E9C222 /* AppCoordinator.swift in Sources */,
 				717C6341279D94DC00E9C222 /* LobbyUseCase.swift in Sources */,
@@ -893,6 +908,10 @@
 		717C6338279D88AC00E9C222 /* ParameterHelper */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ParameterHelper;
+		};
+		71DD9B4427A04BA500DF1A8D /* RxExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RxExtension;
 		};
 		71FEDB5D279424A600B2F8C7 /* DebugHelper */ = {
 			isa = XCSwiftPackageProductDependency;

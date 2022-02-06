@@ -1,4 +1,5 @@
 PODS:
+  - FSCalendar (2.8.2)
   - Kingfisher (5.15.8):
     - Kingfisher/Core (= 5.15.8)
   - Kingfisher/Core (5.15.8)
@@ -14,6 +15,7 @@ PODS:
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
+  - FSCalendar
   - Kingfisher (= 5.15.8)
   - RxCocoa (= 6.2.0)
   - RxSwift (= 6.2.0)
@@ -22,6 +24,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - FSCalendar
     - Kingfisher
     - RxCocoa
     - RxRelay
@@ -30,6 +33,7 @@ SPEC REPOS:
     - SnapKit
 
 SPEC CHECKSUMS:
+  FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
   Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
   RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
   RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
@@ -37,6 +41,6 @@ SPEC CHECKSUMS:
   RxWebKit: f1d621d914e230f8aff65a7f03c969dced8915eb
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: a8b961cd3cb0f03c9f1b19423814dfebc9491de7
+PODFILE CHECKSUM: f90e7f6388a89089b6c5c240960a616facb7de41
 
 COCOAPODS: 1.11.2

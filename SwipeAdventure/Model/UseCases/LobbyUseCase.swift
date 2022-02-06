@@ -5,8 +5,8 @@
 //  Created by 曾問 on 2022/1/23.
 //
 
-import Foundation
+import RxSwift
 
 protocol LobbyUseCase {
-    
+    func getHabitList() -> Observable<LobbyViewModel.Snapshot>
 }

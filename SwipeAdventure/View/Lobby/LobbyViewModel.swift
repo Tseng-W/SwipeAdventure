@@ -6,6 +6,9 @@
 //
 
 import Foundation
+import RxCocoa
+import UIKit
+import RxExtension
 
 class LobbyViewModel: BaseViewModel {
     typealias UseCase = LobbyUseCase
@@ -20,9 +23,21 @@ class LobbyViewModel: BaseViewModel {
 }
 
 extension LobbyViewModel {
-    struct Input {}
-    struct Output {}
+    typealias Snapshot = NSDiffableDataSourceSnapshot<Section, ColorModel>
+    typealias DataSource = UICollectionViewDiffableDataSource<Section, ColorModel>
+    struct Input {
+        var viewWillAppear: Driver<Void>
+    }
+    struct Output {
+        var snapshot: Driver<Snapshot>
+    }
+
     func transform(input: Input) -> Output {
-        return .init()
+        let _useCase = useCase
+        let outputSnapshot = _useCase.getHabitList().asDriverOnErrorJustComplete()
+
+        return .init(
+            snapshot: outputSnapshot
+        )
     }
 }
